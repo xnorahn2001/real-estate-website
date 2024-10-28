@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../components/Card";
-import Title from "../components/Title";
+
+import Card from "../Components/Card";
+import Title from "../Components/Title";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ function SignUp() {
       <article>
         <Title title="Sign Up" />
         <form onSubmit={handleSubmit}>
-          <label>Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             name="email"

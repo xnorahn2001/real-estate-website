@@ -2,11 +2,11 @@ import { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { PropertiesContext } from "../Contexts/PropertiesContext";
-import Card from "../components/Card";
-import Image from "../components/Image";
-import Title from "../components/Title";
-import Location from "../components/Location";
-import Price from "../components/Price";
+import Card from "../Components/Card";
+import Image from "../Components/Image";
+import Title from "../Components/Title";
+import Location from "../Components/Location";
+import Price from "../Components/Price";
 
 function PropertyDetails() {
   const { id } = useParams();

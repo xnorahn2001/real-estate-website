@@ -1,7 +1,8 @@
 // PropertiesContext.js
 import { createContext, useState } from "react"; 
 import PropTypes from "prop-types";
-import propertiesData from "../data";
+
+import propertiesData from "../Data";
 
 export const PropertiesContext = createContext();
 

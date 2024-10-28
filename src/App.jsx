@@ -2,10 +2,10 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "./pages/Home";
-import Header from "./components/Header";
-import Footer from "./components/Footer"; // استيراد الفوتر
-import AddProperty from "./pages/AddPropertyForm";
+import Home from "./Pages/Home";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer"; // استيراد الفوتر
+import AddProperty from "./Pages/AddPropertyForm";
 import UpdateProperty from "./pages/UpdatePropertyForm";
 import { PropertiesProvider } from "./Contexts/PropertiesContext";
 import PropertyDetails from "./pages/PropertyDetails";
@@ -16,7 +16,7 @@ import SignOut from "./pages/SignOut";
 const ErrorPage = () => (
   <div>
     <h2>Oops! Page Not Found 😕</h2>
-    <p>الصفحة اللي تبحث عنها مو موجودة. تأكد من الرابط أو ارجع للصفحة الرئيسية.</p>
+    <p>The page you are looking for does not exist. Check the link or return to the home page.</p>
   </div>
 );
 

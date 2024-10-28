@@ -1,18 +1,18 @@
 import PropTypes from "prop-types";
+import { useContext } from "react";
 
 import Property from "./Property";
-import { useContext } from "react";
 import { PropertiesContext } from "../../Contexts/PropertiesContext";
 
 const Properties = () => {
   const { properties } = useContext(PropertiesContext);
 
-  if (properties.length == 0) {
+  if (properties.length === 0) {
     return <h2>There is no properties</h2>;
   }
 
   return (
-    <>
+  
       <section>
         {properties.map((property) => {
           return (
@@ -23,7 +23,7 @@ const Properties = () => {
           );
         })}
       </section>
-    </>
+    
   );
 };
 

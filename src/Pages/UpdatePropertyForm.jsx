@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import PropTypes from "prop-types";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import uploadImageToCloudinary from "../utility/UploadImage";
-import { useLocation, useNavigate } from "react-router-dom";
 import { PropertiesContext } from "../Contexts/PropertiesContext";
 
 const UpdatePropertyForm = () => {
@@ -115,7 +115,7 @@ const UpdatePropertyForm = () => {
         </div>
         <div id="location-input">
           <label htmlFor="location">
-            Location:
+            Location:  </label>
             <input
               type="text"
               name="location"
@@ -123,12 +123,12 @@ const UpdatePropertyForm = () => {
               onChange={handleChange}
               value={location}
             ></input>
-          </label>
+        
           {errors.location && <p className="errors">{errors.location}</p>}
         </div>
         <div id="price-input">
           <label htmlFor="price">
-            Price:
+            Price: </label>
             <input
               type="number"
               name="price"
@@ -136,7 +136,7 @@ const UpdatePropertyForm = () => {
               onChange={handleChange}
               value={price}
             ></input>
-          </label>
+         
           {errors.price && <p className="errors">{errors.price}</p>}
         </div>
         <button type="submit">Update Property</button>

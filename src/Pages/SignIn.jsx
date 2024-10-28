@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Card from "../components/Card";
-import Title from "../components/Title";
+
+import Card from "../Components/Card";
+import Title from "../Components/Title";
 
 function SignIn() {
   const navigate = useNavigate();

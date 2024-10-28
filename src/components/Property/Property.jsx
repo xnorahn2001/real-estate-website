@@ -1,8 +1,9 @@
 import { useContext } from "react";
-import Card from "../Card";
 import PropTypes from "prop-types";
-import { PropertiesContext } from "../../Contexts/PropertiesContext";
 import { useNavigate } from "react-router-dom";
+
+import Card from "../Card";
+import { PropertiesContext } from "../../Contexts/PropertiesContext";
 import Image from "../Image";
 import Title from "../Title";
 import Price from "../Price";

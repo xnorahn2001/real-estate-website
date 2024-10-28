@@ -5,9 +5,9 @@ const propertiesData = [
     location: "Saudi Arabia",
     image: "https://i.pinimg.com/564x/bf/3e/84/bf3e848fd83dfd87183e22f1dd6f2936.jpg",
     price: 179000000,
-    rooms: 4,           // عدد الغرف
-    guestRooms: 1,      // غرف الضيافة
-    halls: 2            // عدد الصالات
+    rooms: 4,           
+    guestRooms: 1,     
+    halls: 2             
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const propertiesData = [
     guestRooms: 1,
     halls: 1
   },
-  // بقية البيانات
+
 ];
 
 export default propertiesData;
